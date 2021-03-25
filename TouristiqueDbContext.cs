@@ -18,7 +18,7 @@ namespace ClassLibrary1
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=Movies;User Id=sa;Password=Youssef456*");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=Touristique;User Id=sa;Password=Youssef456*");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

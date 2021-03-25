@@ -1,0 +1,10 @@
+/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/bin/Debug/netcoreapp3.1/TouristiqueDbContext.deps.json
+/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/bin/Debug/netcoreapp3.1/TouristiqueDbContext.runtimeconfig.json
+/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/bin/Debug/netcoreapp3.1/TouristiqueDbContext.runtimeconfig.dev.json
+/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/bin/Debug/netcoreapp3.1/TouristiqueDbContext.dll
+/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/bin/Debug/netcoreapp3.1/TouristiqueDbContext.pdb
+/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/obj/Debug/netcoreapp3.1/TouristiqueDbContext.csprojAssemblyReference.cache
+/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/obj/Debug/netcoreapp3.1/TouristiqueDbContext.AssemblyInfoInputs.cache
+/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/obj/Debug/netcoreapp3.1/TouristiqueDbContext.AssemblyInfo.cs
+/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/obj/Debug/netcoreapp3.1/TouristiqueDbContext.dll
+/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/obj/Debug/netcoreapp3.1/TouristiqueDbContext.pdb
