@@ -1,0 +1,14 @@
+using System;
+using System.Collections.Generic;
+
+namespace ClassLibrary1.models
+{
+    public class Site
+    {
+        public int Id { get; set; }
+        public string Nom { get; set; }
+        public DateTime Anciennite { get; set; }
+        public virtual ICollection<Activite> Activites { get; set; }
+        public virtual ICollection<TransportSite> TransportSites { get; set; }
+    }
+}
