@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/TouristiqueDbContext.csproj": {}
+    "/home/youssefc/RiderProjects/TouristiqueDbContext/TouristiqueDbContext/TouristiqueDbContext.csproj": {}
   },
   "projects": {
-    "/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/TouristiqueDbContext.csproj": {
+    "/home/youssefc/RiderProjects/TouristiqueDbContext/TouristiqueDbContext/TouristiqueDbContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/TouristiqueDbContext.csproj",
+        "projectUniqueName": "/home/youssefc/RiderProjects/TouristiqueDbContext/TouristiqueDbContext/TouristiqueDbContext.csproj",
         "projectName": "TouristiqueDbContext",
-        "projectPath": "/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/TouristiqueDbContext.csproj",
+        "projectPath": "/home/youssefc/RiderProjects/TouristiqueDbContext/TouristiqueDbContext/TouristiqueDbContext.csproj",
         "packagesPath": "/home/youssefc/.nuget/packages/",
-        "outputPath": "/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/obj/",
+        "outputPath": "/home/youssefc/RiderProjects/TouristiqueDbContext/TouristiqueDbContext/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/youssefc/.nuget/NuGet/NuGet.Config"
@@ -76,6 +76,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

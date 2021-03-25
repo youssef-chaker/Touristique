@@ -1,6 +1,6 @@
 using System;
 
-namespace ClassLibrary1.models
+namespace TouristiqueDbContext.models
 {
     public class Restaurant
     {

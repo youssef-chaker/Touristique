@@ -1,4 +1,4 @@
-namespace ClassLibrary1.models
+namespace TouristiqueDbContext.models
 {
     public class Activite
     {

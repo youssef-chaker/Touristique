@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ClassLibrary1.Migrations
+namespace TouristiqueDbContext.Migrations
 {
     public partial class initialMigration : Migration
     {

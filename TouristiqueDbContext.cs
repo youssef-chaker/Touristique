@@ -1,9 +1,9 @@
 ﻿using System;
-using ClassLibrary1.models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TouristiqueDbContext.models;
 
-namespace ClassLibrary1
+namespace TouristiqueDbContext
 {
     public class TouristiqueDbContext : IdentityDbContext
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ClassLibrary1.models
+namespace TouristiqueDbContext.models
 {
     public class Site
     {

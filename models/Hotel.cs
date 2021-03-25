@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace ClassLibrary1.models
+namespace TouristiqueDbContext.models
 {
     public class Hotel
     {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lLBc04oPG1bMJIHTMmaUUGqkQIt4yDsMLnugxkoPiy2z+thFaq0NE1Dwm51e+rfUdJ9/oUsRT/GVAj4tSnG5Tg==",
+  "dgSpecHash": "UqR4jwDB6giEiufcZPDXEtQz/j3DsYRZEXnb98bv6TJXTL3YPk127xDkPyu8KgzQRknADRmI//VMUzP/RQYHaA==",
   "success": true,
-  "projectFilePath": "/home/youssefc/RiderProjects/ClassLibrary1/TouristiqueDbContext/TouristiqueDbContext.csproj",
+  "projectFilePath": "/home/youssefc/RiderProjects/TouristiqueDbContext/TouristiqueDbContext/TouristiqueDbContext.csproj",
   "expectedPackageFiles": [
     "/home/youssefc/.nuget/packages/microsoft.aspnetcore.cryptography.internal/3.1.0/microsoft.aspnetcore.cryptography.internal.3.1.0.nupkg.sha512",
     "/home/youssefc/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/3.1.0/microsoft.aspnetcore.cryptography.keyderivation.3.1.0.nupkg.sha512",

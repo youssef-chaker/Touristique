@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ClassLibrary1.Migrations
+namespace TouristiqueDbContext.Migrations
 {
     public partial class addedRestaurantfkToHotelandSite : Migration
     {
