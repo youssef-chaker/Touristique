@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UserSecretsId>aspnet-TouristiqueMvc-A86FD156-43C7-48B8-A162-5A9F6B9E2A6D</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.8" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.8" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="TouristiqueDbContext, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\TouristiqueDbContext\TouristiqueDbContext\bin\Debug\netcoreapp3.1\TouristiqueDbContext.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+@model List<TouristiqueDbContext.models.Hotel>
+
+@{
+    ViewData["Title"] = "Hotels";
+}
+
+@foreach (var hotel in Model)
+{
+    <a class="nav-link text-dark" asp-area="" asp-controller="Hotels" asp-action="Hotel" asp-route-id="@hotel.Id">@hotel.Nom</a>
+}
+
+
+
