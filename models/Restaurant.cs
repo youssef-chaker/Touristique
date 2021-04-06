@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace TouristiqueDbContext.models
 {
@@ -9,6 +10,7 @@ namespace TouristiqueDbContext.models
         public int Num { get; set; }
         public string Cuisine { get; set; }
         public string Type { get; set; }
+        public virtual ICollection<NoteRestaurant> Notes { get; set; }
         public virtual Location Location { get; set; }
     }
 }

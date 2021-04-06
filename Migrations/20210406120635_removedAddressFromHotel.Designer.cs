@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TouristiqueDbContext;
 
 namespace TouristiqueDbContext.Migrations
 {
     [DbContext(typeof(TouristiqueDbContext))]
-    partial class TouristiqueDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210406120635_removedAddressFromHotel")]
+    partial class removedAddressFromHotel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -273,6 +275,9 @@ namespace TouristiqueDbContext.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Etoile")
+                        .HasColumnType("int");
 
                     b.Property<int?>("LocationId")
                         .HasColumnType("int");
@@ -575,7 +580,7 @@ namespace TouristiqueDbContext.Migrations
             modelBuilder.Entity("TouristiqueDbContext.models.NoteHotel", b =>
                 {
                     b.HasOne("TouristiqueDbContext.models.Hotel", "Hotel")
-                        .WithMany("Notes")
+                        .WithMany()
                         .HasForeignKey("HotelId");
 
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
@@ -586,7 +591,7 @@ namespace TouristiqueDbContext.Migrations
             modelBuilder.Entity("TouristiqueDbContext.models.NoteRestaurant", b =>
                 {
                     b.HasOne("TouristiqueDbContext.models.Restaurant", "Restaurant")
-                        .WithMany("Notes")
+                        .WithMany()
                         .HasForeignKey("RestaurantId");
 
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
@@ -597,7 +602,7 @@ namespace TouristiqueDbContext.Migrations
             modelBuilder.Entity("TouristiqueDbContext.models.NoteSite", b =>
                 {
                     b.HasOne("TouristiqueDbContext.models.Site", "Site")
-                        .WithMany("Notes")
+                        .WithMany()
                         .HasForeignKey("SiteId");
 
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
