@@ -8,7 +8,6 @@ namespace TouristiqueDbContext.models
         public int Id { get; set; }
         public string Nom { get; set; }
         public int Num { get; set; }
-        public string Cuisine { get; set; }
         public string Type { get; set; }
         public virtual ICollection<NoteRestaurant> Notes { get; set; }
         public virtual Location Location { get; set; }
