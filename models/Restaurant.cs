@@ -9,5 +9,6 @@ namespace TouristiqueDbContext.models
         public int Num { get; set; }
         public string Cuisine { get; set; }
         public string Type { get; set; }
+        public Location Location { get; set; }
     }
 }

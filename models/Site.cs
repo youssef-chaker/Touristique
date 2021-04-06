@@ -9,6 +9,7 @@ namespace TouristiqueDbContext.models
         public string Nom { get; set; }
         public DateTime Anciennite { get; set; }
         public Restaurant Restaurant { get; set; }
+        public Location Location { get; set; }
         public virtual ICollection<Activite> Activites { get; set; }
         public virtual ICollection<TransportSite> TransportSites { get; set; }
     }
