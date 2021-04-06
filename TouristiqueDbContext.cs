@@ -15,6 +15,11 @@ namespace TouristiqueDbContext
         public DbSet<Activite> Activites { get; set; }
         public DbSet<TransportHotel> TransportHotels { get; set; }
         public DbSet<TransportSite> TransportSites { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<NoteRestaurant> NoteRestaurants { get; set; }
+        public DbSet<NoteHotel> NoteHotels { get; set; }
+        public DbSet<NoteSite> NoteSites { get; set; }
+        
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
