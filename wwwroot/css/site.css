@@ -69,3 +69,28 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  max-width: 100px;
+  border: none;
+}
+
+table, th, td {
+  margin: 2rem 0;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.grid2 {
+  display: grid;
+  width: fit-content;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
