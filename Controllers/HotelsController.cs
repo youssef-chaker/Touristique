@@ -53,11 +53,13 @@ namespace TouristiqueMvc.Controllers
             return View("Hotel",new HotelViewModel{Hotel = hotel});
         }
 
-        //not working
         [HttpPost]
         public async Task<IActionResult> PostComment(int hotelId,string comment)
         {
-            var c = await _db.HotelComments.AddAsync(new HotelComment { Comment = comment, Hotel = new Hotel{Id = hotelId},User = new IdentityUser{Id = User.FindFirstValue(ClaimTypes.NameIdentifier)}});
+            var c = new HotelComment {Comment = comment};
+            c.Hotel = await _db.Hotels.FindAsync(hotelId);
+            c.User = await _db.Users.FindAsync(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            await _db.HotelComments.AddAsync(c);
             await _db.SaveChangesAsync();
             return Redirect($"{hotelId}");
         }
