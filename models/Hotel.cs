@@ -13,7 +13,7 @@ namespace TouristiqueDbContext.models
         public virtual Location Location { get; set; }
         public virtual ICollection<Chambre> Chambres { get; set; }
         public virtual ICollection<TransportHotel> TransportHotels { get; set; }
-        public virtual ICollection<HotelComments> Comments { get; set; }
+        public virtual ICollection<HotelComment> Comments { get; set; }
         
     }
 }
