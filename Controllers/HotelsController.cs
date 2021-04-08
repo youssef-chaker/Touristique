@@ -104,8 +104,16 @@ namespace TouristiqueMvc.Controllers
 
             return Redirect($"{result.Entity.Id}");
         }
-        
+
         [HttpPost]
+        public async Task<IActionResult> AddChambre(Chambre chambre)
+        {
+            var hotel = await _db.Hotels.FindAsync(chambre.Hotel.Id);
+            chambre.Hotel = hotel;
+            await _db.Chambres.AddAsync(chambre);
+            await _db.SaveChangesAsync();
+            return Redirect($"{chambre.Hotel.Id}");
+        }
         
     }
 }

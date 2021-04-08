@@ -9,5 +9,6 @@ namespace TouristiqueMvc.Models
         public string Ville { get; set; }
         public string Pays { get; set; }
         public Hotel Hotel { get; set; }
+        public Chambre Chambre { get; set; }
     }
 }

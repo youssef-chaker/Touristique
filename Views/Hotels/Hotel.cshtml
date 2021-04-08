@@ -73,6 +73,21 @@
     
 </table>
 
+@using (@Html.BeginForm("AddChambre", "Hotels"))
+{
+    <input asp-for="Chambre.Hotel.Id" type="hidden" value="@Model.Hotel.Id">
+    @Html.LabelFor(h => h.Chambre.Num)
+    @Html.TextBoxFor(h => h.Chambre.Num)
+    <br/>
+    @Html.LabelFor(h => h.Chambre.Type)
+    @Html.TextBoxFor(h => h.Chambre.Type)
+    <br/>
+    @Html.LabelFor(h =>h.Chambre.Prix)
+    @Html.TextBoxFor(h => h.Chambre.Prix)
+    <br/>
+    <input type="submit">
+}
+
 <hr/>
 <b>Comments : </b>
 <br/><br/>
