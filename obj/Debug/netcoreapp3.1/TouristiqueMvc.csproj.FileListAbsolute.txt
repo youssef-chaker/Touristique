@@ -112,3 +112,4 @@
 /home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/obj/Debug/netcoreapp3.1/Razor/Views/Hotels/Hotel.cshtml.g.cs
 /home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/obj/Debug/netcoreapp3.1/Razor/Views/Restaurants/Restaurant.cshtml.g.cs
 /home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/obj/Debug/netcoreapp3.1/Razor/Views/Sites/Site.cshtml.g.cs
+/home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/obj/Debug/netcoreapp3.1/Razor/Views/Hotels/New.cshtml.g.cs

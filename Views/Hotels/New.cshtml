@@ -1,0 +1,20 @@
+@model HotelViewModel
+
+@using (@Html.BeginForm("Post","Hotels"))
+{
+    @Html.LabelFor(h => h.Hotel.Nom)
+    @Html.TextBoxFor(h => h.Hotel.Nom)
+    <br/>
+    @Html.LabelFor(h => h.Hotel.Location.Adresse)
+    @Html.TextBoxFor(h => h.Hotel.Location.Adresse)
+    <br/>
+    @Html.LabelFor(h => h.Hotel.Location.Ville)
+    @Html.TextBoxFor(h => h.Hotel.Location.Ville)
+    <br/>
+    @Html.LabelFor(h => h.Hotel.Location.Pays)
+    @Html.TextBoxFor(h => h.Hotel.Location.Pays)
+    
+    <input type="submit">
+}
+
+

@@ -79,5 +79,33 @@ namespace TouristiqueMvc.Controllers
             await _db.SaveChangesAsync();
             return Redirect($"{hotelId}");
         }
+
+        [HttpGet]
+        public IActionResult New()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Post(Hotel hotel)
+        {
+            var location = await _db.Locations.Where(l =>
+                l.Adresse == hotel.Location.Adresse && l.Pays == hotel.Location.Pays &&
+                l.Ville == hotel.Location.Ville).FirstOrDefaultAsync();
+            if (location == null)
+            {
+                var newLocation = await _db.Locations.AddAsync(hotel.Location);
+                hotel.Location = newLocation.Entity;
+            }
+            else hotel.Location = location;
+
+            var result = await _db.Hotels.AddAsync(hotel);
+            await _db.SaveChangesAsync();
+
+            return Redirect($"{result.Entity.Id}");
+        }
+        
+        [HttpPost]
+        
     }
 }
