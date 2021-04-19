@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TouristiqueDbContext;
 
 namespace TouristiqueDbContext.Migrations
 {
     [DbContext(typeof(TouristiqueDbContext))]
-    partial class TouristiqueDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210419203305_fixedsitecomment")]
+    partial class fixedsitecomment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

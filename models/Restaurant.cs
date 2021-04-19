@@ -11,5 +11,6 @@ namespace TouristiqueDbContext.models
         public string Type { get; set; }
         public virtual ICollection<NoteRestaurant> Notes { get; set; }
         public virtual Location Location { get; set; }
+        public virtual ICollection<RestaurantComment> Comments { get; set; }
     }
 }

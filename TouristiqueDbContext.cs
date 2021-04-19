@@ -21,7 +21,7 @@ namespace TouristiqueDbContext
         public DbSet<NoteSite> NoteSites { get; set; }
         public DbSet<HotelComment> HotelComments { get; set; }
         public DbSet<RestaurantComment> RestaurantComments { get; set; }
-        public DbSet<SitesComment> SiteComments { get; set; }
+        public DbSet<SiteComment> SiteComments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

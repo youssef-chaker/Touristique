@@ -13,5 +13,6 @@ namespace TouristiqueDbContext.models
         public virtual Location Location { get; set; }
         public virtual ICollection<Activite> Activites { get; set; }
         public virtual ICollection<TransportSite> TransportSites { get; set; }
+        public virtual ICollection<SiteComment> Comments { get; set; }
     }
 }
