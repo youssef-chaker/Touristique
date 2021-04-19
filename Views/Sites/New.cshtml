@@ -1,0 +1,20 @@
+@model SiteViewModel
+
+@using (@Html.BeginForm("Post","Sites"))
+{
+    @Html.LabelFor(h => h.Site.Nom)
+    @Html.TextBoxFor(h => h.Site.Nom)
+    <br/>
+    @Html.LabelFor(h => h.Site.Location.Adresse)
+    @Html.TextBoxFor(h => h.Site.Location.Adresse)
+    <br/>
+    @Html.LabelFor(h => h.Site.Location.Ville)
+    @Html.TextBoxFor(h => h.Site.Location.Ville)
+    <br/>
+    @Html.LabelFor(h => h.Site.Location.Pays)
+    @Html.TextBoxFor(h => h.Site.Location.Pays)
+    
+    <input type="submit">
+}
+
+
