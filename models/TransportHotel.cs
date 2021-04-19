@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace TouristiqueDbContext.models
 {
     public class TransportHotel
