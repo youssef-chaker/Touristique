@@ -89,6 +89,7 @@ namespace TouristiqueMvc.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(Hotel hotel)
         {
+            if (!ModelState.IsValid) return BadRequest();
             var location = await _db.Locations.Where(l =>
                 l.Adresse == hotel.Location.Adresse && l.Pays == hotel.Location.Pays &&
                 l.Ville == hotel.Location.Ville).FirstOrDefaultAsync();
@@ -108,6 +109,7 @@ namespace TouristiqueMvc.Controllers
         [HttpPost]
         public async Task<IActionResult> AddChambre(Chambre chambre)
         {
+            if (!ModelState.IsValid) return BadRequest();
             var hotel = await _db.Hotels.FindAsync(chambre.Hotel.Id);
             chambre.Hotel = hotel;
             await _db.Chambres.AddAsync(chambre);

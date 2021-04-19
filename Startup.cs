@@ -30,7 +30,10 @@ namespace TouristiqueMvc
             services.AddDbContext<TouristiqueDbContext.TouristiqueDbContext>();
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<TouristiqueDbContext.TouristiqueDbContext>();
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation().AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            });
             services.AddRazorPages();
         }
 

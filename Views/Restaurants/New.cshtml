@@ -1,0 +1,20 @@
+@model RestaurantViewModel
+
+@using (@Html.BeginForm("Post","Restaurants"))
+{
+    @Html.LabelFor(h => h.Restaurant.Nom)
+    @Html.TextBoxFor(h => h.Restaurant.Nom)
+    <br/>
+    @Html.LabelFor(h => h.Restaurant.Location.Adresse)
+    @Html.TextBoxFor(h => h.Restaurant.Location.Adresse)
+    <br/>
+    @Html.LabelFor(h => h.Restaurant.Location.Ville)
+    @Html.TextBoxFor(h => h.Restaurant.Location.Ville)
+    <br/>
+    @Html.LabelFor(h => h.Restaurant.Location.Pays)
+    @Html.TextBoxFor(h => h.Restaurant.Location.Pays)
+    
+    <input type="submit">
+}
+
+
