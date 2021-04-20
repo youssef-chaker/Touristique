@@ -13,6 +13,10 @@
     <br/>
     @Html.LabelFor(h => h.Site.Location.Pays)
     @Html.TextBoxFor(h => h.Site.Location.Pays)
+    <br/>
+    @Html.LabelFor(h => h.Site.Anciennite)
+    <input asp-for="Site.Anciennite">
+    
     
     <input type="submit">
 }

@@ -37,7 +37,7 @@ namespace TouristiqueMvc.Controllers
             Site site;
             try
             { 
-                site = await _db.Sites.Include(h => h.Comments).ThenInclude(c => c.User).Include(h => h.Location).Include(h => h.Notes).Where(h => h.Id == id)
+                site = await _db.Sites.Include(h => h.Restaurant).Include(h => h.Restaurant.Notes).Include(h => h.Comments).ThenInclude(c => c.User).Include(h => h.Location).Include(h => h.Notes).Where(h => h.Id == id)
                     .FirstAsync();
             }
             catch(Exception e)
@@ -101,6 +101,17 @@ namespace TouristiqueMvc.Controllers
             await _db.SaveChangesAsync();
 
             return Redirect($"{result.Entity.Id}");
+        }
+        
+        [HttpPost]
+        public async Task<IActionResult> PostRestaurant(Restaurant restaurant,int siteId)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            await _db.Restaurants.AddAsync(restaurant);
+            var site = await _db.Sites.FirstAsync(h => h.Id==siteId);
+            site.Restaurant = restaurant;
+            await _db.SaveChangesAsync();
+            return Redirect($"{siteId}");
         }
     }
 }

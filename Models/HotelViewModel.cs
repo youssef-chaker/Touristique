@@ -10,5 +10,6 @@ namespace TouristiqueMvc.Models
         public string Pays { get; set; }
         public Hotel Hotel { get; set; }
         public Chambre Chambre { get; set; }
+        public Restaurant Restaurant { get; set; }
     }
 }

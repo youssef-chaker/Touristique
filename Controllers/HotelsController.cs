@@ -107,14 +107,26 @@ namespace TouristiqueMvc.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddChambre(Chambre chambre)
+        public async Task<IActionResult> AddChambre(Chambre chambre,int hotelId)
         {
-            if (!ModelState.IsValid) return BadRequest();
-            var hotel = await _db.Hotels.FindAsync(chambre.Hotel.Id);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var hotel = await _db.Hotels.FindAsync(hotelId);
             chambre.Hotel = hotel;
             await _db.Chambres.AddAsync(chambre);
             await _db.SaveChangesAsync();
             return Redirect($"{chambre.Hotel.Id}");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PostRestaurant(Restaurant restaurant,int hotelId)
+        {
+
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            await _db.Restaurants.AddAsync(restaurant);
+            var hotel = await _db.Hotels.FirstAsync(h => h.Id==hotelId);
+            hotel.Restaurant = restaurant;
+            await _db.SaveChangesAsync();
+            return Redirect($"{hotelId}");
         }
         
     }

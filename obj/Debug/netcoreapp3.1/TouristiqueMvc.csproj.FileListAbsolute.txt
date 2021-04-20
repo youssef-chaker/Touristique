@@ -2,7 +2,6 @@
 /home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/bin/Debug/netcoreapp3.1/appsettings.json
 /home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/bin/Debug/netcoreapp3.1/TouristiqueMvc.StaticWebAssets.xml
-/home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/bin/Debug/netcoreapp3.1/app.db
 /home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/bin/Debug/netcoreapp3.1/TouristiqueMvc
 /home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/bin/Debug/netcoreapp3.1/TouristiqueMvc.deps.json
 /home/youssefc/RiderProjects/TouristiqueMvc/TouristiqueMvc/bin/Debug/netcoreapp3.1/TouristiqueMvc.runtimeconfig.json

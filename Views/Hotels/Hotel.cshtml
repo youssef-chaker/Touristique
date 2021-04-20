@@ -72,10 +72,10 @@
     }
     
 </table>
-
+<b>ajouter chambre</b>
 @using (@Html.BeginForm("AddChambre", "Hotels"))
 {
-    <input asp-for="Chambre.Hotel.Id" type="hidden" value="@Model.Hotel.Id">
+    <input name="hotelId" type="hidden" value="@Model.Hotel.Id">
     @Html.LabelFor(h => h.Chambre.Num)
     @Html.TextBoxFor(h => h.Chambre.Num)
     <br/>
@@ -85,6 +85,21 @@
     @Html.LabelFor(h =>h.Chambre.Prix)
     @Html.TextBoxFor(h => h.Chambre.Prix)
     <br/>
+    <input type="submit">
+}
+
+<b>ajouter Restaurant</b>
+@using (@Html.BeginForm("PostRestaurant","Hotels"))
+{
+    @Html.LabelFor(h => h.Restaurant.Nom)
+    @Html.TextBoxFor(h => h.Restaurant.Nom)
+    <input type="hidden" asp-for="Restaurant.Location.Adresse" value="@Model.Hotel.Location.Adresse" />
+    <input type="hidden" asp-for="Restaurant.Location.Ville" value="@Model.Hotel.Location.Ville" />
+    <input type="hidden" asp-for="Restaurant.Location.Pays" value="@Model.Hotel.Location.Pays" />
+    <input type="hidden" name="hotelId" value="@Model.Hotel.Id" />
+    <br/>
+    @Html.LabelFor(h => h.Restaurant.Type)
+    @Html.TextBoxFor(h => h.Restaurant.Type)
     <input type="submit">
 }
 
